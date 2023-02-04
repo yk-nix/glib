@@ -749,6 +749,8 @@ gboolean              g_type_is_a                    (GType            type,
 #define g_type_is_a(a,b) ((a) == (b) || (g_type_is_a) ((a), (b)))
 
 GOBJECT_AVAILABLE_IN_ALL
+gpointer              g_type_class_get               (GType            type);
+GOBJECT_AVAILABLE_IN_ALL
 gpointer              g_type_class_ref               (GType            type);
 GOBJECT_AVAILABLE_IN_ALL
 gpointer              g_type_class_peek              (GType            type);
@@ -764,6 +766,8 @@ gpointer              g_type_interface_peek          (gpointer         instance_
 GOBJECT_AVAILABLE_IN_ALL
 gpointer              g_type_interface_peek_parent   (gpointer         g_iface);
 
+GOBJECT_AVAILABLE_IN_ALL
+gpointer              g_type_default_interface_get   (GType            g_type);
 GOBJECT_AVAILABLE_IN_ALL
 gpointer              g_type_default_interface_ref   (GType            g_type);
 GOBJECT_AVAILABLE_IN_ALL
