@@ -130,8 +130,8 @@ struct _GResolverClass {
    * @hostname: the hostname to resolve
    * @flags: extra #GResolverNameLookupFlags to modify the lookup
    * @cancellable: (nullable): a #GCancellable
-   * @callback: (scope async): a #GAsyncReadyCallback to call when completed
-   * @user_data: (closure): data to pass to @callback
+   * @callback: (scope async) (closure): a #GAsyncReadyCallback to call when completed
+   * @user_data: data to pass to @callback
    *
    * Asynchronous version of GResolverClass::lookup_by_name_with_flags
    *

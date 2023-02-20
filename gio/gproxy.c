@@ -126,8 +126,8 @@ g_proxy_connect (GProxy            *proxy,
  * @connection: a #GIOStream
  * @proxy_address: a #GProxyAddress
  * @cancellable: (nullable): a #GCancellable
- * @callback: (scope async): a #GAsyncReadyCallback
- * @user_data: (closure): callback data
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback
+ * @user_data: callback data
  *
  * Asynchronous version of g_proxy_connect().
  *

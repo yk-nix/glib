@@ -2056,8 +2056,8 @@ g_socket_client_enumerator_callback (GObject      *object,
  * @client: a #GSocketClient
  * @connectable: a #GSocketConnectable specifying the remote address.
  * @cancellable: (nullable): a #GCancellable, or %NULL
- * @callback: (scope async): a #GAsyncReadyCallback
- * @user_data: (closure): user data for the callback
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback
+ * @user_data: user data for the callback
  *
  * This is the asynchronous version of g_socket_client_connect().
  *
@@ -2161,8 +2161,8 @@ g_socket_client_connect_async (GSocketClient       *client,
  * @host_and_port: the name and optionally the port of the host to connect to
  * @default_port: the default port to connect to
  * @cancellable: (nullable): a #GCancellable, or %NULL
- * @callback: (scope async): a #GAsyncReadyCallback
- * @user_data: (closure): user data for the callback
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback
+ * @user_data: user data for the callback
  *
  * This is the asynchronous version of g_socket_client_connect_to_host().
  *
@@ -2207,8 +2207,8 @@ g_socket_client_connect_to_host_async (GSocketClient        *client,
  * @domain: a domain name
  * @service: the name of the service to connect to
  * @cancellable: (nullable): a #GCancellable, or %NULL
- * @callback: (scope async): a #GAsyncReadyCallback
- * @user_data: (closure): user data for the callback
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback
+ * @user_data: user data for the callback
  *
  * This is the asynchronous version of
  * g_socket_client_connect_to_service().
@@ -2238,8 +2238,8 @@ g_socket_client_connect_to_service_async (GSocketClient       *client,
  * @uri: a network uri
  * @default_port: the default port to connect to
  * @cancellable: (nullable): a #GCancellable, or %NULL
- * @callback: (scope async): a #GAsyncReadyCallback
- * @user_data: (closure): user data for the callback
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback
+ * @user_data: user data for the callback
  *
  * This is the asynchronous version of g_socket_client_connect_to_uri().
  *

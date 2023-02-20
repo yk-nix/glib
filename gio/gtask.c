@@ -740,8 +740,8 @@ g_task_finalize (GObject *object)
  * @source_object: (nullable) (type GObject): the #GObject that owns
  *   this task, or %NULL.
  * @cancellable: (nullable): optional #GCancellable object, %NULL to ignore.
- * @callback: (scope async): a #GAsyncReadyCallback.
- * @callback_data: (closure): user data passed to @callback.
+ * @callback: (scope async) (closure user_data): a #GAsyncReadyCallback.
+ * @callback_data: user data passed to @callback.
  *
  * Creates a #GTask acting on @source_object, which will eventually be
  * used to invoke @callback in the current
@@ -794,8 +794,8 @@ g_task_new (gpointer              source_object,
  * g_task_report_error:
  * @source_object: (nullable) (type GObject): the #GObject that owns
  *   this task, or %NULL.
- * @callback: (scope async): a #GAsyncReadyCallback.
- * @callback_data: (closure): user data passed to @callback.
+ * @callback: (scope async) (closure user_data): a #GAsyncReadyCallback.
+ * @callback_data: user data passed to @callback.
  * @source_tag: an opaque pointer indicating the source of this task
  * @error: (transfer full): error to report
  *
@@ -830,8 +830,8 @@ g_task_report_error (gpointer             source_object,
  * g_task_report_new_error:
  * @source_object: (nullable) (type GObject): the #GObject that owns
  *   this task, or %NULL.
- * @callback: (scope async): a #GAsyncReadyCallback.
- * @callback_data: (closure): user data passed to @callback.
+ * @callback: (scope async) (closure user_data): a #GAsyncReadyCallback.
+ * @callback_data: user data passed to @callback.
  * @source_tag: an opaque pointer indicating the source of this task
  * @domain: a #GQuark.
  * @code: an error code.

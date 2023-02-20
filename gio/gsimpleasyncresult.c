@@ -294,8 +294,8 @@ g_simple_async_result_init (GSimpleAsyncResult *simple)
 /**
  * g_simple_async_result_new:
  * @source_object: (nullable): a #GObject, or %NULL.
- * @callback: (scope async): a #GAsyncReadyCallback.
- * @user_data: (closure): user data passed to @callback.
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback.
+ * @user_data: user data passed to @callback.
  * @source_tag: the asynchronous function.
  *
  * Creates a #GSimpleAsyncResult.
@@ -338,8 +338,8 @@ g_simple_async_result_new (GObject             *source_object,
 /**
  * g_simple_async_result_new_from_error:
  * @source_object: (nullable): a #GObject, or %NULL.
- * @callback: (scope async): a #GAsyncReadyCallback.
- * @user_data: (closure): user data passed to @callback.
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback.
+ * @user_data: user data passed to @callback.
  * @error: a #GError
  *
  * Creates a #GSimpleAsyncResult from an error condition.
@@ -369,8 +369,8 @@ g_simple_async_result_new_from_error (GObject             *source_object,
 /**
  * g_simple_async_result_new_take_error: (skip)
  * @source_object: (nullable): a #GObject, or %NULL
- * @callback: (scope async): a #GAsyncReadyCallback
- * @user_data: (closure): user data passed to @callback
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback.
+ * @user_data: user data passed to @callback.
  * @error: a #GError
  *
  * Creates a #GSimpleAsyncResult from an error condition, and takes over the
@@ -403,8 +403,8 @@ g_simple_async_result_new_take_error (GObject             *source_object,
 /**
  * g_simple_async_result_new_error:
  * @source_object: (nullable): a #GObject, or %NULL.
- * @callback: (scope async): a #GAsyncReadyCallback.
- * @user_data: (closure): user data passed to @callback.
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback.
+ * @user_data: user data passed to @callback.
  * @domain: a #GQuark.
  * @code: an error code.
  * @format: a string with format characters.
@@ -1050,8 +1050,8 @@ g_simple_async_report_error_in_idle (GObject             *object,
 /**
  * g_simple_async_report_gerror_in_idle:
  * @object: (nullable): a #GObject, or %NULL
- * @callback: (scope async): a #GAsyncReadyCallback.
- * @user_data: (closure): user data passed to @callback.
+ * @callback: (scope async) (closure): a #GAsyncReadyCallback.
+ * @user_data: user data passed to @callback.
  * @error: the #GError to report
  *
  * Reports an error in an idle function. Similar to
